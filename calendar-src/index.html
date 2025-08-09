@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar</title>
+  <!-- Use root site's CSS so theme toggle matches -->
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body>
+  <a id="auto"></a><a id="light"></a><a id="dark"></a>
+  <div class="site">
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="logo">Dima <span class="badge">teagmháil</span></div>
+          <div class="sub">Calendar</div>
+        </div>
+        <div class="theme-toggle" role="group" aria-label="Theme">
+          <a href="#auto" data-theme="auto">Auto</a>
+          <a href="#light" data-theme="light">Light</a>
+          <a href="#dark" data-theme="dark">Dark</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <nav class="nav">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="../index.html#auto">← Back to Home</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div id="root"></div>
+      </main>
+    </div>
+    <footer class="footer">Built with Vite. Deployed to /calendar/ via GitHub Actions.</footer>
+  </div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
